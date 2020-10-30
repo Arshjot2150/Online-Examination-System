@@ -77,7 +77,7 @@ public class AdminAuth extends JFrame implements ActionListener{
 			   String key =""; 
 			   try {
 					Class.forName("com.mysql.jdbc.Driver");
-					Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+					Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 					Statement s = c.createStatement();
 					ResultSet rs = s.executeQuery("select * from adminauth");
 					while(rs.next())
@@ -144,7 +144,7 @@ public class AdminAuth extends JFrame implements ActionListener{
 				try {
 					
 					Class.forName("com.mysql.jdbc.Driver");
-					Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+					Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 					Statement s = c.createStatement();
 					ResultSet rs = s.executeQuery("select * from adminauth");
 					while(rs.next())

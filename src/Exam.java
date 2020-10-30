@@ -130,7 +130,7 @@ public class Exam extends JFrame implements ActionListener{
    
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+			c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 			s4=c.createStatement();
 			
 			 if(id1.contains("@"))
@@ -177,7 +177,7 @@ public class Exam extends JFrame implements ActionListener{
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+			c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 		    
 		    s3 = c.createStatement();
 		    s3.executeUpdate("create table "+tabname+" (question text,ans text)");

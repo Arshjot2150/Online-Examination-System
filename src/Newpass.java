@@ -60,7 +60,7 @@ public class Newpass extends JFrame implements ActionListener {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+			Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 			Statement s = c.createStatement();
 			s.executeUpdate("update students set password='"+str+"' where email='"+email1+"'");
 			msg.showMessageDialog(this, "Password has been changed,We are redirecting you to Login Page");

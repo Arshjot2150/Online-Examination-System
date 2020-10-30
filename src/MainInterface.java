@@ -77,7 +77,7 @@ public class MainInterface extends JFrame implements ActionListener {
 			super.dispose();
 			PleaseWait wait = new PleaseWait();
 			Random r = new Random();
-			int i = r.nextInt();
+			int i = r.nextInt(9999);
 			if(i<0)
 				i=i*-1;
 			String key = String.valueOf(i);
@@ -102,7 +102,7 @@ public class MainInterface extends JFrame implements ActionListener {
 			try {
 				
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+				Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 				Statement s = c.createStatement();
 				ResultSet rs = s.executeQuery("select * from adminauth");
 				while(rs.next())
@@ -143,7 +143,6 @@ public class MainInterface extends JFrame implements ActionListener {
 				e.printStackTrace();
 				msg.showMessageDialog(this, "Please check your internet connection!!");
 			}
-			
 			
 			
 			wait.dispose();

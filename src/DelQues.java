@@ -58,7 +58,7 @@ public class DelQues extends JFrame implements ActionListener {
 	  	
 	  	 try {
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+				Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 				Statement s = c.createStatement();
 				ResultSet rs = s.executeQuery("select * from topics");
 				while(rs.next())
@@ -215,7 +215,7 @@ public class DelQues extends JFrame implements ActionListener {
 		  	delete.addActionListener(this);
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+			Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 			Statement s = c.createStatement();
 			ResultSet rs = s.executeQuery("select * from "+select.getSelectedItem());
 			 i = 0;
@@ -253,7 +253,7 @@ public class DelQues extends JFrame implements ActionListener {
 				{
 					try {
 						Class.forName("com.mysql.jdbc.Driver");
-						Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+						Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 						Statement s = c.createStatement();
 						s.executeUpdate("delete from "+select.getSelectedItem()+" where question='"+str1[j]+"'"); 
 						

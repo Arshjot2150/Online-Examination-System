@@ -139,7 +139,7 @@ public class Signup extends JFrame implements ActionListener{
         {    	   
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+				Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 				Statement s = c.createStatement();
 				s.executeUpdate("insert into students values('"+name1.getText()+"','"+email1.getText()+"','"+mobile1.getText()+"','"+qualification1.getText()+"','"+year1.getSelectedItem()+"','"+str+"')");
 				msg.showMessageDialog(this, "Welcome "+name1.getText()+",We are Redirecting you to Login Page");

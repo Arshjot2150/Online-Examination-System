@@ -139,7 +139,7 @@ public class AddQues extends JFrame implements ActionListener
 	  
 	  	 try {
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+				Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 				Statement s = c.createStatement();
 				ResultSet rs = s.executeQuery("select * from topics");
 				while(rs.next())
@@ -169,7 +169,7 @@ public class AddQues extends JFrame implements ActionListener
 			
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+				Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 				Statement s = c.createStatement();
 				int a = select1.getSelectedIndex();
 				a=a+1;

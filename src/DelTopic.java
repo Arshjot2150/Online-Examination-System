@@ -48,7 +48,7 @@ public class DelTopic extends JFrame implements ActionListener {
 	  	
 	  	 try {
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+				Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 				Statement s = c.createStatement();
 				ResultSet rs = s.executeQuery("select * from topics");
 				while(rs.next())
@@ -77,7 +77,7 @@ public class DelTopic extends JFrame implements ActionListener {
 		 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection c = DriverManager.getConnection("jdbc:mysql://remotemysql.com/bJWPCJNbjl","bJWPCJNbjl","HR1aj2sZme");
+			Connection c = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12372328","sql12372328","kGTAF8RBfA");
 			Statement s = c.createStatement();
 			Statement s1 = c.createStatement();
 			s1.executeUpdate("delete from topics where topics='"+select.getSelectedItem()+"'");
